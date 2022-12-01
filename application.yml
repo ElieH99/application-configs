@@ -3,20 +3,3 @@ eureka:
     eureka-server-u-r-l-context: http://localhost:8761/eureka
     service-url:
       defaultZone: http://localhost:8761/eureka
-spring.datasource.url=jdbc:postgresql://localhost:5432/fyp_grading_db
-spring.datasource.username=postgres
-spring.datasource.password=3amirform
-spring.datasource.driver-class-name=org.postgresql.Driver
-spring.jpa.show-sql=true
-
-spring.jpa.hibernate.ddl-auto=update
-#For development and testing purposes use create-drop, for normal operations use update.
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-
-eureka.client.region = default
-eureka.client.registryFetchIntervalSeconds = 5
-spring.application.name=grading-service
-eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
-
-spring.boot.admin.client.url=http://localhost:9090
-management.endpoints.web.exposure.include=*

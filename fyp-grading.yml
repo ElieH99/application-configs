@@ -24,9 +24,9 @@ spring:
       client:
         url: http://localhost:9090
   datasource:
-    password: 3amirform
+    password: 3amirform #change password and put your own
     driver-class-name: org.postgresql.Driver
-    username: postgres
+    username: postgres #channge username and put your own
     url: jdbc:postgresql://localhost:5432/fyp_grading_db
 server:
   port: 8080

@@ -14,6 +14,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: professor
     show-sql: 'true'
     hibernate:
       ddl-auto: update
@@ -24,9 +25,9 @@ spring:
       client:
         url: http://localhost:9090
   datasource:
-    password: 3amirform #change password and put your own
+    password: '1234' #change password and put your own
     driver-class-name: org.postgresql.Driver
     username: postgres #change username and put your own
-    url: jdbc:postgresql://localhost:5432/fyp_grading_db
+    url: jdbc:postgresql://localhost:5440/fyp_grading_db #change this url to where you are running postgres locally with the fyp_grading_db already created and the student and professor schemas added to schemas
 server:
   port: '8082'
